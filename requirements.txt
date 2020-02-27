@@ -1,0 +1,17 @@
+aniso8601==7.0.0
+Django==2.1.7
+django-dynamic-fixture==2.0.0
+django-filter==2.2.0
+django-rest-framework==0.1.0
+djangorestframework==3.9.2
+graphene==2.1.8
+graphene-django==2.8.2
+graphql-core==2.3.1
+graphql-relay==2.0.1
+gunicorn==19.9.0
+promise==2.3
+psycopg2-binary==2.7.7
+pytz==2018.9
+Rx==1.6.1
+singledispatch==3.4.0.3
+six==1.12.0
