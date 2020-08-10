@@ -23,3 +23,19 @@ class GQLTestCase(GraphQLTestCase):
 
         content = json.loads(response.content)
         self.assertResponseNoErrors(response)
+
+    def test_all_students_query(self):
+        response = self.query(
+            '''
+            query {
+              allStudents{
+                id
+                name
+              }
+            }
+            ''',
+            op_name='allStudents'
+        )
+
+        content = json.loads(response.content)
+        self.assertResponseNoErrors(response)
