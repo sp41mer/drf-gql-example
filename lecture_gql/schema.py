@@ -37,11 +37,13 @@ class SchoolMutation(graphene.Mutation):
     school = graphene.Field(SchoolType)
 
     def mutate(self, info, school_id, new_name):
-        # TODO
-        return {
-            'result': True,
-            'school': School.objects.first()
-        }
+        try:
+            school = School.objects.get(pk=school_id)
+        except School.DoesNotExist:
+            return SchoolMutation(result=False, school=None)
+        school.name = new_name
+        school.save(update_fields=["name"])
+        return SchoolMutation(result=True, school=school)
 
 
 class Mutation:
