@@ -1,5 +1,7 @@
 # Django + Graphene — GraphQL by example
 
+[![CI](https://github.com/sp41mer/drf-gql-example/actions/workflows/ci.yml/badge.svg)](https://github.com/sp41mer/drf-gql-example/actions/workflows/ci.yml)
+
 A minimal Graphene 2 / graphene-django setup over the same School/City
 models used in my other DRF lecture repos, so you can compare REST and
 GraphQL side by side.
